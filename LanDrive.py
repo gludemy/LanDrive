@@ -2,6 +2,8 @@ from flask import Flask, request, redirect, url_for, send_from_directory, render
 import os
 import psutil
 import socket
+import webbrowser
+import threading
 
 app = Flask(__name__)
 # UPLOAD_FOLDER = 'uploads'
@@ -131,5 +133,9 @@ def upload_file():
 def download(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
+def open_browser():
+    webbrowser.open_new('http://127.0.0.1:5000')
+
 if __name__ == '__main__':
+    threading.Timer(1, open_browser).start()
     app.run(host='0.0.0.0')
