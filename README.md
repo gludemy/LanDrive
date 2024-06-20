@@ -9,6 +9,8 @@ A beginner-friendly file-sharing application for devices on the same network (Wi
 
 ### 1. Download LanDrive.exe from the Release Page
 
+Download `LanDrive.exe` from the [release](https://github.com/gludemy/LanDrive/releases/tag/v0.0.1)
+
 Perfect for those without programming knowledge. Simply download the binary file and double-click to run.
 
 For Mac OS users, you can build the binary yourself with the following commands (Python required):
